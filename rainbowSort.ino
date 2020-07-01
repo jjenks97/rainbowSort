@@ -178,7 +178,7 @@ void rainbowSortRGB() {
     
 
     int redEndpoint = 0;
-    while (leds[redEndpoint].r > 0){
+    while (leds[redEndpoint].r > 0 and redEndpoint < NUM_LEDS){
       redEndpoint++;
     }
     heapSortRed2(leds, redEndpoint);
